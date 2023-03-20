@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: 
-    dep: load-balancer
+  name: load-balancer
 spec:
   selector:
-    svc: nest
+    matchLabels:
+      svc: nest
   ports:
     - port: 4000
       targetPort: 4000
