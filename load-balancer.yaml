@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: load-balancer
 spec:
+  type: NodePort
   ports:
     - port: 4000
       targetPort: 4000
