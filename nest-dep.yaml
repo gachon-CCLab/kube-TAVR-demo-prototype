@@ -6,11 +6,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nest-ser
+      app: nest
   template:
     metadata:
       labels:
-        app: nest
+        app: nest-ser
     spec:
       containers:
       - name: nest
