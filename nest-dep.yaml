@@ -2,7 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nest-server
-  labels: nest-dev
+  labels: 
+    dep: nest-dev
 spec:
   replicas: 1
   selector:
