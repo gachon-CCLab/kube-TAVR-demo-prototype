@@ -6,7 +6,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nest-server
+      app: nest-serv
   template:
     metadata:
       labels:
