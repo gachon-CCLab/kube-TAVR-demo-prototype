@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: nest-server
   labels: 
-    dep: nest-dep
+    app: nest-server
 spec:
   replicas: 1
   selector:
