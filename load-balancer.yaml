@@ -4,7 +4,7 @@ metadata:
   name: load-balancer
 spec:
   selector:
-    app: nest
+    app: nest-ser
   ports:
     - port: 4000
       targetPort: 4000
