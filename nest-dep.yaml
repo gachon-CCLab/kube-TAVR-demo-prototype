@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nest-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nest-server
+  template:
+    metadata:
+      labels:
+        app: nest-server
+    spec:
+      containers:
+      - name: nest-server
+        image: kakaru0/tavr-demo-prototype-nest:tagname
+        resources:
+          limits:
+            memory: "64Mi"
+            cpu: "0.1"
+        ports:
+        - containerPort: 4000
