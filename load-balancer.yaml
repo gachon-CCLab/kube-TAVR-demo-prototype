@@ -4,8 +4,7 @@ metadata:
   name: load-balancer
 spec:
   selector:
-    matchLabels:
-      svc: nest
+    svc: nest
   ports:
     - port: 4000
       targetPort: 4000
