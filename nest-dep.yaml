@@ -2,12 +2,12 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nest-server
-  labels: nest-de
+  labels: nest-dev
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nest-serer
+      app: nest-server
   template:
     metadata:
       labels:
