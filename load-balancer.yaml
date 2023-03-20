@@ -3,9 +3,10 @@ kind: Service
 metadata:
   name: load-balancer
 spec:
+  type: LoadBalancer
+  ports:
+    - protocol: TCP
+      port: 4000
+      targetPort: 4000
   selector:
     svc: nest
-  ports:
-    - port: 4000
-      targetPort: 4000
-  type: LoadBalancer
