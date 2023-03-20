@@ -8,6 +8,6 @@ spec:
     app: nest-server
   ports:
   - protocol: TCP
-    port: 4000
-    targetPort: 4000
+    port: 40
+    targetPort: 40
     nodePort: 30001
