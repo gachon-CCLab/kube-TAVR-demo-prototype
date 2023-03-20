@@ -13,7 +13,7 @@ spec:
         app: nest
     spec:
       containers:
-      - name: nest-server
+      - name: nest
         image: kakaru0/tavr-demo-prototype-nest:latest
         resources:
           limits:
