@@ -17,7 +17,7 @@ spec:
         image: kakaru0/tavr-demo-prototype-nest:latest
         env:
         - name: APP_PORT
-          value: 4002
+          value: "4002"
         resources:
           limits:
             memory: "64Mi"
