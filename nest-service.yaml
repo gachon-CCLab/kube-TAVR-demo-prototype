@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nest
+  labels:
+    svc: nest-service
+spec:
+  ports:
+  - protocol: TCP
+    port: 3000			# 서비스를 노출하는 포트
+    targetPort: 4000	# 애플리케이션(파드)을 노출하는 포트
+  selector:				# 이 서비스가 적용될 파드 정보를 지정 (선택이나 권장 사항)
+    app: nest-server
