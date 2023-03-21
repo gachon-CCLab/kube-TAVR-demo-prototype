@@ -5,7 +5,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app: nest-server
+    app: nest-serve
   ports:
   - protocol: TCP
     port: 3000
