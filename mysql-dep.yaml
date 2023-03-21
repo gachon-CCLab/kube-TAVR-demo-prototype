@@ -22,7 +22,3 @@ spec:
           value: root
         ports:
         - containerPort: 3306
-      volumes:
-      - name: volume1
-        persistentVolumeClaim:
-          claimName: pvc1
