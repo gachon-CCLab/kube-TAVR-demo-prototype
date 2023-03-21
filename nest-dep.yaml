@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nest
-        image: kakaru0/tavr-demo-prototype-nest:lates
+        image: kakaru0/tavr-demo-prototype-nest:latest
         resources:
           limits:
             memory: "64Mi"
