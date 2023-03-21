@@ -9,4 +9,4 @@ spec:
       port: 4002
       targetPort: 4000
   selector:
-    svc: nest-service
+    app: nest-server
