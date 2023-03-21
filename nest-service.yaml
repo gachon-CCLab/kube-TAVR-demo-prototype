@@ -3,11 +3,11 @@ kind: Service
 metadata:
   name: nest
   labels:
-    svc: nest-service
+    app: nest-service
 spec:
   ports:
   - protocol: TCP
-    port: 3000
+    port: 4005
     targetPort: 4000
   selector:
     app: nest-server
