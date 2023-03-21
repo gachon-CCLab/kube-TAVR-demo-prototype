@@ -20,4 +20,4 @@ spec:
             memory: "64Mi"
             cpu: "0.1"
         ports:
-        - containerPort: 4002
+        - containerPort: 4000
