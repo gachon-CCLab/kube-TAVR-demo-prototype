@@ -15,9 +15,13 @@ spec:
       containers:
       - name: nest
         image: kakaru0/tavr-demo-prototype-nest:latest
+        env:
+        - name: APP_PORT
+          value: '4000'
         resources:
           limits:
             memory: "64Mi"
             cpu: "0.1"
         ports:
-        - containerPort: 4000
+        - containerPort: 3888
+ 
