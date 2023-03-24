@@ -3,9 +3,11 @@ kind: PersistentVolumeClaim
 metadata:
   name: pvc1
 spec:
-  storageClassName: airflow-nfs
   accessModes:
     - ReadWriteOnce
+  volumeMode: Filesystem
+  storageClassName: airflow-nfs
   resources:
     requests:
       storage: 10Gi
+  

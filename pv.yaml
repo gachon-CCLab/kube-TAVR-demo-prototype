@@ -10,13 +10,5 @@ spec:
   - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
   storageClassName: airflow-nfs
-  local:
+  nfs:
     path: /volume/pv1
-  nodeAffinity:
-    required:
-      nodeSelectorTerms:
-      - matchExpressions:
-        - key: name
-          operator: In
-          values:
-          - node1
