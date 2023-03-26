@@ -7,9 +7,7 @@ spec:
   ports:
     - protocol: TCP
       port: 4002
-      targetPort: 4000
-    - protocol: TCP
-      port: 4003
       targetPort: 5000
+
   selector:
     app: nest-server
