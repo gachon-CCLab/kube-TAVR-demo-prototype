@@ -6,14 +6,14 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nest-server
+      app: py-server
   template:
     metadata:
       labels:
-        app: nest-server
+        app: py-server
     spec:
       containers:
-      - name: nest-server
+      - name: py-server
         image: kakaru0/python-server:latest
         resources:
           limits:
