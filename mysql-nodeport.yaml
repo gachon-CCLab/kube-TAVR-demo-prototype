@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: mysql-nodeport
 spec:
-  type: Nodeport
+  type: NodepPort
   ports:
     - port: 5000
       targetPort: 3306
