@@ -3,9 +3,9 @@ kind: Service
 metadata:
   name: load-balancer-py
 spec:
-  selector:
-    app: py-test
+  type: LoadBalancer
   ports:
     - port: 4003
       targetPort: 8000
-  type: LoadBalancer
+  selector:
+    app: py-test
