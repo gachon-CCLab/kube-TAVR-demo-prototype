@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: py-server
+  name: py-test
   labels: py-server
 spec:
   replicas: 1
