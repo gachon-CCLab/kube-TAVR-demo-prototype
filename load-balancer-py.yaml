@@ -8,4 +8,4 @@ spec:
     - port: 4003
       targetPort: 8000
   selector:
-    app: py-server
+    app: py-test
