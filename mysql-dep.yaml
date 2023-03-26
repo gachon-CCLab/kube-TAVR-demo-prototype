@@ -26,8 +26,8 @@ spec:
         volumeMounts:
         - name: airflow-nfs-volume
           mountPath: /var/lib/mysql
-        volumes:
-        - name: airflow-nfs-volume
-          persistentVolumeClaim:
-            claimName: mysql-pv-claim
+      volumes:
+      - name: airflow-nfs-volume
+        persistentVolumeClaim:
+          claimName: mysql-pv-claim
           
